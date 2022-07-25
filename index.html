@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Find Meals For Your Ingredients</h1>
+      <blockquote>
+        Cooking requires confident guesswork and improvisation—experimentation
+        and substitution, dealing with failure and uncertainty in a creative
+        way.<br />
+        <cite>- Paul Theroux</cite>
+      </blockquote>
+      <div class="heading-search">
+        <input
+          id="input_search"
+          type="text"
+          placeholder="Enter an ingredient (E.g. 'egg')"
+        />
+        <button type="submit" id="button_search" class="search-btn btn">
+          <i class="fas fa-search fa-2x"></i>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-heading">
+        <h2>Your Search Results :</h2>
+      </div>
+      <div id="meal_container" class="container-box"></div>
+    </div>
+
+    <div class="recipe-div">
+      <div id="cover"></div>
+      <div id="info-card-div"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
